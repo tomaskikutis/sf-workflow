@@ -1,7 +1,5 @@
 source sd-workflow-config.bash
 
-echo "hello ${sdworkflow__github_username}"
-
 alias @rebase='git fetch && git fetch upstream && git rebase upstream/master'
 alias @getCurrentBranchName='git branch | grep ^* | cut -c 3-'
 
