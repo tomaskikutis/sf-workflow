@@ -14,7 +14,7 @@ Don't forget to add the configs specified in `sd-workflow-config.bash` to your `
 
 `@taskFinish` - Runs tests, pushes to GitHub and submits a pull request.
 
-`python3 superdesk-automerge.py` - Watches your pull requests on GitHub and merges then they are approved with tests passing and no merge conflicts "WIP" tag or "DEPENDS ON:" comment present.
+`python3 superdesk-automerge.py` - Watches your pull requests on GitHub and merges then they are approved with tests passing and no merge conflicts "WIP" tag or "DEPENDS ON:" comment present. After the PR is merged, the script restarts the instance waits for it to reload and assings the task to QA.
 
 ### Other helpers worth mentioning:
 
