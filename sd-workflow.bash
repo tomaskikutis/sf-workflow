@@ -46,7 +46,7 @@ alias @getCurrentBranchName='git branch | grep ^* | cut -c 3-'
   | python3 -c "\
 import sys,json,re;\
 j=json.load(sys.stdin);\
-sys.stdout.write(re.sub(r'[^a-zA-Z0-9]', '-', j['fields']['summary']).lower() + '-(' + j['key'] + ')')"
+sys.stdout.write(re.sub(r'[^a-zA-Z0-9]', '-', j['fields']['summary']).lower().strip('-') + '-(' + j['key'] + ')')"
 }
 
 @getTaskReporter() {
