@@ -1,3 +1,4 @@
+alias @linked="find ./node_modules -maxdepth 1 -type l -printf '%p\n'"
 alias @rebase='git fetch && git fetch upstream && git rebase upstream/master'
 alias @getCurrentBranchName='git branch | grep ^* | cut -c 3-'
 
